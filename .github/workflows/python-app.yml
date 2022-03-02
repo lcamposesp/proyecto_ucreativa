@@ -34,10 +34,9 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
-    - name: Deploy to GitHub Pages
-        uses: lcamposesp/proyecto_ucreativa
-        with:
-          target_branch: main
-          build_dir: root
+        pytest >output.log
+    - name: Test cleanup
+      run: |
+        clear  
+    
        
