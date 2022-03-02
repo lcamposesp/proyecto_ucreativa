@@ -36,7 +36,6 @@ jobs:
       run: |
         pytest
     - name: Deploy to GitHub Pages
-        if: success()
         uses: lcamposesp/proyecto_ucreativa
         with:
           target_branch: main
