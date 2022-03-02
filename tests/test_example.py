@@ -8,4 +8,4 @@ def test_sum():
     assert sum_fun(10,11) > 5 
 
 def test_rest():
-    assert rest_fun(10,11) == 1
+    assert rest_fun(11,10) == 1
