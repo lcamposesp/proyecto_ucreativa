@@ -34,13 +34,13 @@ jobs:
     - name: Test with pytest
       run: |
         pytest 
-  deploy:
-    runs-on: ubuntu-latest
+  #deploy:
+    #runs-on: ubuntu-latest
 
-    steps:
-    - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: main 
-          folder: main
+    #steps:
+    #- name: Deploy 🚀
+       # uses: JamesIves/github-pages-deploy-action@v4.2.5
+       #with:
+          #branch: main 
+          #folder: main
       
